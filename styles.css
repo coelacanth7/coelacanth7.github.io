@@ -1,34 +1,114 @@
 /*background image*/
-html,
-body,
-.row,
-.container-fluid,
-.pluto
-{
-  height: 100%;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background-color: #282828;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282828;
+}
+
 .pluto
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #282828;
-  background-color: grey;
   padding: 0;
+  width: 55%;
+  min-width: 320px;
 }
 
 .copy
 {
   background-color: #282828;
   color: white;
-  /*background-color: grey;*/
+  width: 100%;
+  background-color: grey;
 }
 
-#pluto
-{
-  display: block;
+#pluto {
   width: 100%;
-  height: auto%;
+  height: auto;
   max-height: 530px;
   max-width: 530px;
-  margin: auto;
+  min-width: 320px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 10px;
+}
+
+
+@media (min-width: 640px) {
+
+  .copy {
+    width: 45%;
+  }
+
+  .name {
+    font-size: 24px;
+    top: 0;
+    left: 20px;
+  }
+
+}
+
+
+/*
+#pluto
+{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 530px;
+  max-width: 530px;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  bottom: 0;
+
+}
+*/
+/*
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+}
+
+.wrapper:after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
 }
 /*
 .pluto {
