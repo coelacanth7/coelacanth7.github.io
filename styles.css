@@ -1,0 +1,40 @@
+/*background image*/
+html,
+body,
+.row,
+.container-fluid,
+.pluto
+{
+  height: 100%;
+}
+.pluto
+{
+  background-color: #282828;
+  background-color: grey;
+  padding: 0;
+}
+
+.copy
+{
+  background-color: #282828;
+  color: white;
+  /*background-color: grey;*/
+}
+
+#pluto
+{
+  display: block;
+  width: 100%;
+  height: auto%;
+  max-height: 530px;
+  max-width: 530px;
+  margin: auto;
+}
+/*
+.pluto {
+  background: url('images/pluto2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+*/
