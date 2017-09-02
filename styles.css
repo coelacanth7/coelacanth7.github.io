@@ -6,7 +6,7 @@
 html,
 body {
   margin: 0;
-  background-color: #282828;
+  background-color: #303030;
 }
 
 .container {
@@ -14,8 +14,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #282828;
+  background-color: #303030;
   height: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
 }
 
 
@@ -27,7 +29,7 @@ LEFT
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282828;
+  background-color: #303030;
   padding: 0;
   width: 100%;
   min-width: 320px;
@@ -46,15 +48,23 @@ LEFT
   position: absolute;
   top: 0;
   left: 5px;
-  font-size: 10px;
+  font-size: 30px;
   color: white;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.block h1 {
+  font-size: 30px;
 }
 
 .block-two {
   position: absolute;
-  color: lightblue;
+  color: #BEF1F0;
   top: 85%;
-  left: 23%;
+  left: 2%;
+
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
 }
 
 /*===================
@@ -62,31 +72,84 @@ RIGHT
 ===================*/
 
 .copy {
-  background-color: #282828;
+  background-color: #303030;
   color: white;
   width: 100%;
+  line-height: 32px;
 }
 
 #copy-wrapper {
   padding-left: 10px;
   padding-right: 10px;
-  border-left-style: solid;
-  border-width: 1px;
-  border-color: grey;
+  height: 100%;
 }
+
+.p {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  color: #F1F1F1;
+}
+
+/*===================
+MEDIA LINKS
+===================*/
 
 .media-links ul {
   display: flex;
   padding: 0;
   list-style: none;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .media-links i {
-  padding-right: 15px;
+  padding-right: 26px;
 }
 
+.media-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.media-links-box h4 a {
+  color: white;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+
+.media-links-box h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  padding-right: 20px;
+  margin-top: 5px;
+}
+
+
+
+/*hover stuff*/
+
+#email:hover {
+  color: #BEF1F0;
+}
+
+.fa-github-alt:hover {
+  color: #533AA5;
+}
+
+.fa-linkedin:hover {
+  color: #3F7CCC;
+}
+
+.fa-medium:hover {
+  color: #9E4078;
+}
+
+.fa-twitter:hover {
+  color: #3940AD;
+}
 
 /*===================
 page resize
@@ -100,6 +163,7 @@ page resize
 
   .copy {
     width: 45%;
+
   }
 
   .name {
@@ -115,6 +179,18 @@ page resize
 
   .pluto {
     width: 55%;
+  }
+
+  .block-two {
+    left: 4%;
+  }
+
+  .p {
+    padding-top: 30%;
+  }
+
+  .media-links-box h4 a {
+    padding-bottom: 0;
   }
 
 }
