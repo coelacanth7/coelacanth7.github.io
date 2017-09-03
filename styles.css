@@ -325,3 +325,25 @@ page resize
     }
 
 }
+
+/* ipad Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .p {
+      padding-top: 40%;
+    }
+}
+
+/* ipad pro landscap*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .p {
+      padding-top: 40%;
+    }
+}
