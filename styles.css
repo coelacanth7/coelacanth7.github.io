@@ -185,7 +185,7 @@ MEDIA LINKS
 page resize
 ===================*/
 
-@media only screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
   .container {
     height: 100vh;
@@ -193,18 +193,12 @@ page resize
 
   .copy {
     width: 45%;
-
-  }
-
-  .name {
-    font-size: 24px;
-    top: 0;
-    left: 20px;
   }
 
   #copy-wrapper {
     padding-left: 20px;
     padding-right: 20px;
+
   }
 
   .pluto {
@@ -212,12 +206,12 @@ page resize
   }
 
   .block-two {
-    left: 4%;
-    font-size: 12px;
+    left: 2%;
+    font-size: 10px;
   }
 
   .p {
-    padding-top: 50%;
+    padding-top: 45%;
     font-size: 22px;
     line-height: 30px;
   }
@@ -228,7 +222,7 @@ page resize
 
 }
 
-@media only screen and (min-width: 850px ) {
+@media (min-width: 850px ) {
 
   .p {
     font-size: 28px;
@@ -243,7 +237,7 @@ page resize
 
 }
 
-@media only screen and (min-width: 1120px ) {
+@media (min-width: 1120px ) {
 
   .p {
     font-size: 34px;
@@ -256,5 +250,78 @@ page resize
   .media-links-box {
     padding-right: 12%;
   }
+
+}
+
+/* iphone 6 Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .copy {
+      height: 100%;
+      max-height: 375px;
+    }
+
+    .p {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .p p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .media-links ul{
+      margin-top: 16px;
+    }
+
+}
+
+/*  iphone 6+ Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    .copy {
+      height: 100%;
+      max-height: 375px;
+    }
+
+    .p {
+      padding-top: 10%;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .p p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .media-links ul{
+      margin-top: 16px;
+    }
+
+}
+
+/* ipad Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .p {
+      padding-top: 90%;
+    }
 
 }
