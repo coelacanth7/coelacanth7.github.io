@@ -1,92 +1,91 @@
 /*background image*/
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  background-color: #303030;
+	margin: 0;
+	background-color: #303030;
 }
 
 .container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #303030;
-  height: 100%;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #303030;
+	height: 100%;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 300;
 }
-
 
 /*===================
 LEFT
 ===================*/
 
 .pluto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #303030;
-  padding: 0;
-  width: 100%;
-  min-width: 320px;
-  height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #303030;
+	padding: 0;
+	width: 100%;
+	min-width: 320px;
+	height: 100vh;
 }
 
 #pluto {
-  width: 100%;
-  height: auto;
-  max-height: 530px;
-  max-width: 530px;
-  min-width: 320px;
+	width: 100%;
+	height: auto;
+	max-height: 530px;
+	max-width: 530px;
+	min-width: 320px;
 }
 
 .block {
-  position: absolute;
-  top: 0;
-  left: 5px;
-  font-size: 30px;
-  color: white;
-  font-family: 'Cormorant Garamond', serif;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	font-size: 30px;
+	color: white;
+	font-family: "Cormorant Garamond", serif;
 }
 
 .block h1 {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 .block-two {
-  position: absolute;
-  color: #BEF1F0;
-  top: 85%;
-  left: 2%;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 14px;
+	position: absolute;
+	color: #bef1f0;
+	top: 85%;
+	left: 2%;
+	font-family: "Source Code Pro", monospace;
+	font-size: 14px;
 }
 
 #animate {
-  opacity: 0;
-  animation: animate 1s infinite;
+	opacity: 0;
+	animation: animate 1s infinite;
 }
 
 @keyframes animate {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 /*===================
@@ -94,31 +93,31 @@ RIGHT
 ===================*/
 
 .copy {
-  background-color: #303030;
-  color: white;
-  width: 100%;
-  line-height: 32px;
+	background-color: #303030;
+	color: white;
+	width: 100%;
+	line-height: 32px;
 }
 
 #copy-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
 }
 
 .p {
-  padding-top: 25px;
-  padding-bottom: 20px;
-  font-size: 28px;
-  color: #F1F1F1;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-size: 28px;
+	color: #f1f1f1;
 }
 
 .p h4 {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .p p {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 /*===================
@@ -126,59 +125,61 @@ MEDIA LINKS
 ===================*/
 
 .media-links ul {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  font-size: 30px;
-  justify-content: center;
-  margin-bottom: 10px;
+	display: flex;
+	padding: 0;
+	list-style: none;
+	font-size: 30px;
+	justify-content: center;
+	margin-bottom: 10px;
 }
 
 .media-links i {
-  padding-right: 26px;
+	padding-right: 26px;
 }
 
 .media-links a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 .media-links-box h4 a {
-  color: white;
-  padding-bottom: 25px;
-  text-decoration: none;
+	color: white;
+	padding-bottom: 25px;
+	text-decoration: none;
 }
 
 .media-links-box h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  padding-right: 20px;
-  margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	padding-right: 20px;
+	margin-top: 5px;
 }
-
-
 
 /*hover stuff*/
 
 #email:hover {
-  color: #BEF1F0;
+	color: #bef1f0;
 }
 
 .fa-github-alt:hover {
-  color: #533AA5;
+	color: #533aa5;
 }
 
 .fa-linkedin:hover {
-  color: #3F7CCC;
+	color: #3f7ccc;
 }
 
 .fa-medium:hover {
-  color: #9E4078;
+	color: #9e4078;
 }
 
 .fa-twitter:hover {
-  color: #3940AD;
+	color: #3940ad;
+}
+
+.fa-file:hover {
+	color: #533aa5;
 }
 
 /*===================
@@ -186,164 +187,131 @@ page resize
 ===================*/
 
 @media (min-width: 640px) {
+	.container {
+		height: 100vh;
+	}
 
-  .container {
-    height: 100vh;
-  }
+	.copy {
+		width: 45%;
+	}
 
-  .copy {
-    width: 45%;
-  }
+	#copy-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
-  #copy-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+	.pluto {
+		width: 55%;
+	}
 
-  }
+	.block-two {
+		left: 2%;
+		font-size: 10px;
+	}
 
-  .pluto {
-    width: 55%;
-  }
+	.p {
+		padding-top: 45%;
+		font-size: 22px;
+		line-height: 30px;
+	}
 
-  .block-two {
-    left: 2%;
-    font-size: 10px;
-  }
-
-  .p {
-    padding-top: 45%;
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .media-links-box h4 a {
-    padding-bottom: 0;
-  }
-
+	.media-links-box h4 a {
+		padding-bottom: 0;
+	}
 }
 
-@media (min-width: 850px ) {
+@media (min-width: 850px) {
+	.p {
+		font-size: 28px;
+		padding-top: 30%;
+		padding-right: 8%;
+		line-height: 36px;
+	}
 
-  .p {
-    font-size: 28px;
-    padding-top: 30%;
-    padding-right: 8%;
-    line-height: 36px;
-  }
-
-  .media-links-box {
-    padding-right: 8%;
-  }
-
+	.media-links-box {
+		padding-right: 8%;
+	}
 }
 
-@media (min-width: 1120px ) {
+@media (min-width: 1120px) {
+	.p {
+		font-size: 34px;
+		padding-top: 20%;
+		padding-right: 12%;
+		padding-bottom: 0;
+		line-height: 40px;
+	}
 
-  .p {
-    font-size: 34px;
-    padding-top: 20%;
-    padding-right: 12%;
-    padding-bottom: 0;
-    line-height: 40px;
-  }
-
-  .media-links-box {
-    padding-right: 12%;
-  }
-
+	.media-links-box {
+		padding-right: 12%;
+	}
 }
 
 /* iphone 6 Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	.copy {
+		height: 100%;
+		max-height: 375px;
+	}
 
-    .copy {
-      height: 100%;
-      max-height: 375px;
-    }
+	.p {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		font-size: 16px;
+	}
 
-    .p {
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      font-size: 16px;
-    }
+	.p p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-    .p p {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .media-links ul{
-      margin-top: 16px;
-    }
-
+	.media-links ul {
+		margin-top: 16px;
+	}
 }
 
 /*  iphone 6+ Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+	.copy {
+		height: 100%;
+		max-height: 375px;
+	}
 
-    .copy {
-      height: 100%;
-      max-height: 375px;
-    }
+	.p {
+		padding-top: 10%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		font-size: 16px;
+	}
 
-    .p {
-      padding-top: 10%;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      font-size: 16px;
-    }
+	.p p {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
 
-    .p p {
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .media-links ul{
-      margin-top: 16px;
-    }
-
+	.media-links ul {
+		margin-top: 16px;
+	}
 }
 
 /* ipad Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .p {
-      padding-top: 90%;
-    }
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	.p {
+		padding-top: 90%;
+	}
 }
 
 /* ipad Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .p {
-      padding-top: 40%;
-    }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.p {
+		padding-top: 40%;
+	}
 }
 
 /* ipad pro landscap*/
-@media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1366px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .p {
-      padding-top: 40%;
-    }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.p {
+		padding-top: 40%;
+	}
 }
