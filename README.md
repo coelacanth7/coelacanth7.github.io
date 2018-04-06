@@ -3,7 +3,7 @@ Repository for personal web website
 
 Here it is so far:
 
-https://coelacanth7.github.io/personalSite/
+https://coelacanth7.github.io/
 
 need to fix:
 
