@@ -1,28 +1,43 @@
-
-
 function randomIntFromInterval(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-function typeWrite(span){
+function typeWrite(span) {
+	var textSpan = document.getElementById(span).textContent;
+	var randInt = 0;
 
-  var textSpan = $('#' + span).text();
-  var randInt = 0
-
-  for (var i = 0; i < textSpan.length; i++) {
-    randInt += parseInt(randomIntFromInterval(40, 300));
-    var typing = setTimeout(function(y){
-      $('#' + span).append(textSpan.charAt(y));
-    }, randInt, i);
-  }
+	for (var i = 0; i < textSpan.length; i++) {
+		randInt += parseInt(randomIntFromInterval(40, 300));
+		var typing = setTimeout(
+			function(pos) {
+				var letter = document.createElement("span");
+				letter.innerHTML = textSpan.charAt(pos);
+				document.getElementById(span).appendChild(letter);
+			},
+			randInt,
+			i
+		);
+	}
 }
 
 function wait(span) {
-  setTimeout(function(){
-    typeWrite(span);
-  }, 2000)
+	setTimeout(function() {
+		typeWrite(span);
+	}, 2000);
 }
 
-$(document).ready(function(){
-  wait('text')
-})
+function ready(fn) {
+	if (
+		document.attachEvent
+			? document.readyState === "complete"
+			: document.readyState !== "loading"
+	) {
+		fn();
+	} else {
+		document.addEventListener("DOMContentLoaded", fn);
+	}
+}
+
+ready(function() {
+	wait("text");
+});
