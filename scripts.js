@@ -7,7 +7,7 @@ function typeWrite(span) {
 	var randInt = 0;
 
 	for (var i = 0; i < textSpan.length; i++) {
-		randInt += parseInt(randomIntFromInterval(40, 300));
+		randInt += parseInt(randomIntFromInterval(200, 300));
 		var typing = setTimeout(
 			function(pos) {
 				var letter = document.createElement("span");
@@ -23,7 +23,7 @@ function typeWrite(span) {
 function wait(span) {
 	setTimeout(function() {
 		typeWrite(span);
-	}, 2000);
+	}, 3000);
 }
 
 function ready(fn) {
