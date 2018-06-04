@@ -1,138 +1,4 @@
-/* reset */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol,
-ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* =================== */
 /*background image*/
-/* =================== */
-
 * {
 	box-sizing: border-box;
 }
@@ -186,14 +52,17 @@ LEFT
 	font-family: "Cormorant Garamond", serif;
 }
 
-.animation {
+.block h1 {
 	font-size: 30px;
+}
+
+.block-two {
 	position: absolute;
 	color: #bef1f0;
 	top: 85%;
 	left: 2%;
 	font-family: "Source Code Pro", monospace;
-	font-size: 24px;
+	font-size: 14px;
 }
 
 #animate {
@@ -223,33 +92,31 @@ LEFT
 RIGHT
 ===================*/
 
-h1,
-h2 {
-	display: inline;
-}
-
-#copy-wrapper {
+.copy {
 	background-color: #303030;
 	color: white;
 	width: 100%;
 	line-height: 32px;
+}
+
+#copy-wrapper {
 	padding-left: 10px;
 	padding-right: 10px;
 	height: 100%;
 }
 
-.copy {
+.p {
 	padding-top: 25px;
 	padding-bottom: 20px;
 	font-size: 28px;
 	color: #f1f1f1;
 }
 
-.copy h4 {
+.p h4 {
 	margin-bottom: 0;
 }
 
-.copy div {
+.p p {
 	margin-top: 20px;
 }
 
@@ -257,7 +124,7 @@ h2 {
 MEDIA LINKS
 ===================*/
 
-.media-links div {
+.media-links ul {
 	display: flex;
 	padding: 0;
 	list-style: none;
@@ -267,8 +134,7 @@ MEDIA LINKS
 }
 
 .media-links i {
-	padding-right: 13px;
-	padding-left: 13px;
+	padding-right: 26px;
 }
 
 .media-links a {
@@ -276,13 +142,13 @@ MEDIA LINKS
 	color: white;
 }
 
-.media-links h4 a {
+.media-links-box h4 a {
 	color: white;
 	padding-bottom: 25px;
 	text-decoration: none;
 }
 
-.media-links h4 {
+.media-links-box h4 {
 	display: flex;
 	justify-content: center;
 	font-size: 16px;
@@ -290,22 +156,7 @@ MEDIA LINKS
 	margin-top: 5px;
 }
 
-.media-links .wrap {
-	flex-wrap: wrap;
-	max-width: 50px;
-}
-
 /*hover stuff*/
-
-.description {
-	display: none;
-	font-family: "Source Code Pro", serif;
-	font-size: 13px;
-}
-
-.media-element:hover ~ .description {
-	display: block;
-}
 
 #email:hover {
 	color: #bef1f0;
@@ -340,8 +191,11 @@ page resize
 		height: 100vh;
 	}
 
-	#copy-wrapper {
+	.copy {
 		width: 45%;
+	}
+
+	#copy-wrapper {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -350,44 +204,45 @@ page resize
 		width: 55%;
 	}
 
-	.animation {
+	.block-two {
 		left: 2%;
-		font-size: 30px;
+		font-size: 10px;
 	}
 
-	.copy {
+	.p {
 		padding-top: 45%;
 		font-size: 22px;
 		line-height: 30px;
 	}
 
-	.media-links h4 a {
+	.media-links-box h4 a {
 		padding-bottom: 0;
 	}
 }
 
 @media (min-width: 850px) {
-	.copy {
+	.p {
 		font-size: 28px;
 		padding-top: 30%;
 		padding-right: 8%;
 		line-height: 36px;
 	}
 
-	.media-links {
+	.media-links-box {
 		padding-right: 8%;
 	}
 }
 
 @media (min-width: 1120px) {
-	.copy {
+	.p {
 		font-size: 34px;
 		padding-top: 20%;
 		padding-right: 12%;
+		padding-bottom: 0;
 		line-height: 40px;
 	}
 
-	.media-links {
+	.media-links-box {
 		padding-right: 12%;
 	}
 }
@@ -399,64 +254,64 @@ page resize
 		max-height: 375px;
 	}
 
-	.copy {
+	.p {
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-bottom: 0;
 		font-size: 16px;
 	}
 
-	.copy div {
+	.p p {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 
-	.media-links div {
+	.media-links ul {
 		margin-top: 16px;
 	}
 }
 
 /*  iphone 6+ Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-	#copy-wrapper {
+	.copy {
 		height: 100%;
 		max-height: 375px;
 	}
 
-	.copy {
+	.p {
 		padding-top: 10%;
 		padding-bottom: 0;
 		margin-bottom: 0;
 		font-size: 16px;
 	}
 
-	.copy div {
+	.p p {
 		margin-top: 10px;
 		margin-bottom: 0;
 	}
 
-	.media-links div {
+	.media-links ul {
 		margin-top: 16px;
 	}
 }
 
 /* ipad Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-	.copy {
+	.p {
 		padding-top: 90%;
 	}
 }
 
 /* ipad Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-	.copy {
+	.p {
 		padding-top: 40%;
 	}
 }
 
 /* ipad pro landscap*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-	.copy {
+	.p {
 		padding-top: 40%;
 	}
 }
