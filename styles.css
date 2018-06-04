@@ -56,7 +56,7 @@ LEFT
 	font-size: 30px;
 }
 
-.block-two {
+.animation {
 	position: absolute;
 	color: #bef1f0;
 	top: 85%;
@@ -204,7 +204,7 @@ page resize
 		width: 55%;
 	}
 
-	.block-two {
+	.animation {
 		left: 2%;
 		font-size: 10px;
 	}
